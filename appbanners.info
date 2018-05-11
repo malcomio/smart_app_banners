@@ -1,0 +1,5 @@
+name = App Banners
+description = Provides support for Apple Smart App Banners and Android native app install banners.
+core = 7.x
+
+configure = admin/config/appbanners
