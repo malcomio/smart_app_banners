@@ -12,9 +12,10 @@ function appbanners_admin_form() {
   $form['ios'] = array(
     '#type' => 'fieldset',
     '#title' => t('iOS'),
-    '#description' => t('See the <a href="!apple">Safari Web Content Guide</a> for more information on App Banners in iOS', array(
-      '!apple' => 'https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html'
-    )),
+    '#description' => t('See the <a href="!apple">Safari Web Content Guide</a> for more information on App Banners in iOS',
+      array(
+        '!apple' => 'https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html',
+      )),
   );
 
   $form['ios']['appbanners_ios_app_id'] = array(
@@ -38,9 +39,10 @@ function appbanners_admin_form() {
   $form['android'] = array(
     '#type' => 'fieldset',
     '#title' => t('Android'),
-    '#description' => t('See the <a href="!android">Google Developer Fundamentals</a> for more information on Native App Install Banners in Android', array(
-      '!android' => 'https://developers.google.com/web/fundamentals/app-install-banners/#native_app_install_banners'
-    )),
+    '#description' => t('See the <a href="!android">Google Developer Fundamentals</a> for more information on Native App Install Banners in Android',
+      array(
+        '!android' => 'https://developers.google.com/web/fundamentals/app-install-banners/#native_app_install_banners',
+      )),
   );
 
   $form['android']['appbanners_android_app_id'] = array(
@@ -93,11 +95,12 @@ function appbanners_admin_form() {
     '#type' => 'textarea',
     '#title' => t('Include script on specific pages'),
     '#default_value' => variable_get('appbanners_pages', ''),
-    '#description' => t("Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.", array(
-      '%blog' => 'blog',
-      '%blog-wildcard' => 'blog/*',
-      '%front' => '<front>'
-    )),
+    '#description' => t("Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.",
+      array(
+        '%blog' => 'blog',
+        '%blog-wildcard' => 'blog/*',
+        '%front' => '<front>',
+      )),
   );
 
   return system_settings_form($form);
