@@ -1,9 +1,11 @@
 INTRODUCTION
 ------------
 
-This module provides the relevant metadata to display native application install banners for iOS and Android.
+This module provides the relevant metadata to display native application
+install banners for iOS and Android.
 
-The app allows site managers to configure details of the apps and the pages where the banners should appear.
+The module allows site managers to configure details of the apps and the pages
+where the banners should appear.
 
 For more information on iOS Smart App Banners, see https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html
 
