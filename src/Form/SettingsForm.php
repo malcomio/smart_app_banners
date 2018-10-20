@@ -89,8 +89,14 @@ class SettingsForm extends ConfigFormBase {
 
     $form['android']['android_icon'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Icon'),
+      '#title' => $this->t('Icon (192px)'),
       '#default_value' => $config->get('android_icon'),
+    ];
+
+    $form['android']['android_icon_large'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Icon (512px)'),
+      '#default_value' => $config->get('android_icon_large'),
     ];
 
     $form['visibility'] = [
@@ -146,6 +152,7 @@ class SettingsForm extends ConfigFormBase {
       ->set('android_short_name', $values['android_short_name'])
       ->set('android_name', $values['android_name'])
       ->set('android_icon', $values['android_icon'])
+      ->set('android_icon_large', $values['android_icon_large'])
 
       ->set('admin', $values['admin'])
       ->set('visibility', $values['visibility'])

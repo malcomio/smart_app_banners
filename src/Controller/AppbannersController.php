@@ -69,12 +69,19 @@ class AppbannersController extends ControllerBase implements ContainerInjectionI
 
     $icon = $config->get('android_icon');
     if (!empty($icon)) {
-      $manifest['icons'] = [
-        [
-          'src' => Html::escape($icon),
-          'type' => 'image/png',
-          'sizes' => '192x192',
-        ],
+      $manifest['icons'][] = [
+        'src' => Html::escape($icon),
+        'type' => 'image/png',
+        'sizes' => '192x192',
+      ];
+    }
+
+    $icon_large = $config->get('android_icon_large');
+    if (!empty($icon_large)) {
+      $manifest['icons'][] = [
+        'src' => Html::escape($icon_large),
+        'type' => 'image/png',
+        'sizes' => '512x512',
       ];
     }
 

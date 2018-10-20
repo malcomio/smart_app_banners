@@ -23,7 +23,10 @@ appbanners.settings:
       label: 'Android Name'
     android_icon:
       type: string
-      label: 'Android Icon'
+      label: 'Android Icon (192px)'
+    android_icon_large:
+      type: string
+      label: 'Android Icon (512px)'
 
     admin:
       type: boolean
