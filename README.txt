@@ -28,5 +28,5 @@ INSTALLATION
 ------------
 
  * Install as you would normally install a contributed Drupal module. Visit:
-   https://drupal.org/documentation/install/modules-themes/modules-7
+   https://www.drupal.org/docs/8/extending-drupal-8/installing-drupal-8-modules
    for further information.
